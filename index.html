@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced To-Do List</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>My To-Do List</h1>
+
+        <div class="input-group">
+            <input type="text" id="task-input" placeholder="Enter a new task">
+            <select id="priority-select">
+                <option value="High">High</option>
+                <option value="Medium" selected>Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <button id="add-task-btn">Add Task</button>
+        </div>
+
+        <div class="filters">
+            <button data-filter="all" class="filter-btn active">All</button>
+            <button data-filter="completed" class="filter-btn">Completed</button>
+            <button data-filter="High" class="filter-btn">High</button>
+            <button data-filter="Medium" class="filter-btn">Medium</button>
+            <button data-filter="Low" class="filter-btn">Low</button>
+        </div>
+
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="src/app.js"></script>
+</body>
+
+</html>
