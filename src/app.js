@@ -60,7 +60,7 @@ addTaskButton.addEventListener('click', () => {
 });
 
 taskInput.addEventListener('keypress', (e) => {
-    if(e.key === 'Enter') addTaskBtn.click();
+    if(e.key === 'Enter') addTaskButton.click();
 });
 
 filterBtns.forEach(btn => {
